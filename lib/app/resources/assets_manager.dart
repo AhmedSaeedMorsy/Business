@@ -1,0 +1,89 @@
+// ignore_for_file: constant_identifier_names
+
+const String imagePath = "assets/images";
+
+class AssetsManager {
+  static const String logo = "$imagePath/logo.png";
+  static const String onBoarding = "$imagePath/onBoarding.jpg";
+  static const String demo = "$imagePath/car.jpg";
+  static const String add = "$imagePath/add.png";
+  static const String blockUser = "$imagePath/block-user.png";
+  static const String creditCards = "$imagePath/credit-cards.png";
+  static const String diamond = "$imagePath/diamond.png";
+  static const String help = "$imagePath/help.png";
+  static const String info = "$imagePath/info.png";
+  static const String logout = "$imagePath/logout.png";
+  static const String messenger = "$imagePath/messenger.png";
+  static const String removeUser = "$imagePath/remove-user.png";
+  static const String share = "$imagePath/share.png";
+  static const String star = "$imagePath/star.png";
+  static const String termsAndConditions =
+      "$imagePath/terms-and-conditions.png";
+  static const String user = "$imagePath/user.png";
+  static const String wallet = "$imagePath/wallet.png";
+  static const String worldwide = "$imagePath/worldwide.png";
+  static const String airplan = "$imagePath/airplan.png";
+  static const String antiques = "$imagePath/antiques.png";
+  static const String bird = "$imagePath/bird.png";
+  static const String book = "$imagePath/book.png";
+  static const String buying = "$imagePath/buying.png";
+  static const String camal = "$imagePath/camal.png";
+  static const String camping = "$imagePath/camping.png";
+  static const String carNumbe = "$imagePath/car-numbe.png";
+  static const String charitable = "$imagePath/charitable.png";
+  static const String coins = "$imagePath/coins.png";
+  static const String creditCardItem = "$imagePath/credit-cards.png";
+  static const String decoration = "$imagePath/decoration.png";
+  static const String education = "$imagePath/education.png";
+  static const String movingFurniture = "$imagePath/moving_furniture.png";
+  static const String occasions = "$imagePath/occasions.png";
+  static const String pilePerforatedBrick =
+      "$imagePath/pile-perforated-brick.png";
+  static const String plant = "$imagePath/plant.png";
+  static const String rabbit = "$imagePath/rabbit.png";
+  static const String simCard = "$imagePath/sim-card-.png";
+  static const String yellowTax = "$imagePath/yellow-tax.png";
+  static const String property = "$imagePath/property.png";
+  static const String furniture = "$imagePath/furniture.png";
+  static const String lands = "$imagePath/lands.png";
+  static const String cars = "$imagePath/cars.png";
+  static const String offshoreTools = "$imagePath/offshoreTools.png";
+  static const String motorcycles = "$imagePath/motorcycles.png";
+  static const String inquires = "$imagePath/inquires.png";
+  static const String heavyEquipment = "$imagePath/heavyEquipment.png";
+  static const String pesticidesAndPetControl =
+      "$imagePath/pesticidesAndPetControl.png";
+  static const String airCondition = "$imagePath/airCondition.png";
+  static const String foods = "$imagePath/foods.png";
+  static const String gifts = "$imagePath/gifts.png";
+  static const String mobiles = "$imagePath/mobiles.png";
+  static const String homeAppliance = "$imagePath/homeAppliances.png";
+  static const String electronics = "$imagePath/electronics.png";
+  static const String cameraAndVideos = "$imagePath/cameraAndVideos.png";
+  static const String electronicGames = "$imagePath/electronicGames.png";
+  static const String health = "$imagePath/health.png";
+  static const String sportAndFitness = "$imagePath/sportAndFitness.png";
+  static const String smartAndBicycle = "$imagePath/smartAndBicycle.png";
+  static const String cleaningServices = "$imagePath/cleaningServices.png";
+  static const String carShow = "$imagePath/carShow.png";
+  static const String spare = "$imagePath/spare.png";
+  static const String commercial = "$imagePath/commercial.png";
+  static const String maintenance = "$imagePath/maintenance.png";
+  static const String employers = "$imagePath/employers.png";
+  static const String jopApplicants = "$imagePath/jobApplicants.png";
+  static const String men = "$imagePath/men.png";
+  static const String kids = "$imagePath/kids.png";
+  static const String wommen = "$imagePath/women.png";
+  static const String demoAds = "$imagePath/demo_ads.webp";
+  static const String megaphone = "$imagePath/megaphone.png";
+  static const String demoCompany = "$imagePath/demo_company.jpg";
+  static const String demoProduct = "$imagePath/demo_product.jpg";
+  static const String egypt = "$imagePath/egypt.png";
+  static const String morocco = "$imagePath/morocco.png";
+  static const String arrowUp = "$imagePath/arrow_up.png";
+  static const String arrowDown = "$imagePath/arrow_down.png";
+  static const String gold = "$imagePath/gold.png";
+  static const String silver = "$imagePath/silver.png";
+  static const String splash = "$imagePath/splash.png";
+  static const String lineGroup = "$imagePath/line_group.png";
+}
