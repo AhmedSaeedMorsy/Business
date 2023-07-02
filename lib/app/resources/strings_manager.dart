@@ -221,4 +221,5 @@ class AppStrings {
   static String productBy = "productBy";
   static String visitBusiness = "visitBusiness";
   static String contactBusiness = "contactBusiness";
+  static String privacyPolicy = "privacyPolicy";
 }

@@ -219,6 +219,22 @@ class MoreScreen extends StatelessWidget {
               ),
               moreItem(
                 context: context,
+                image: AssetsManager.termsAndConditions,
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    Routes.privacyPolicyRoute,
+                  );
+                },
+                label: AppStrings.privacyPolicy.tr(),
+              ),
+              Container(
+                color: ColorManager.grey,
+                width: double.infinity,
+                height: AppSize.s1.h,
+              ),
+              moreItem(
+                context: context,
                 image: AssetsManager.removeUser,
                 onTap: () {},
                 label: AppStrings.deleteAccount.tr(),

@@ -11,6 +11,7 @@ import 'package:micro_service_e_commerce/presentation/my_ads/view/my_ads_screen.
 import 'package:micro_service_e_commerce/presentation/notifications/view/notification_screen.dart';
 import 'package:micro_service_e_commerce/presentation/onboarding/view/onBoarding_screen.dart';
 import 'package:micro_service_e_commerce/presentation/paid_packages/view/paid_package_screen.dart';
+import 'package:micro_service_e_commerce/presentation/privacy_policy/view/privacy_policy_screen.dart';
 import 'package:micro_service_e_commerce/presentation/promoted_ads/view/choose_category_promoted_screen.dart';
 import 'package:micro_service_e_commerce/presentation/promoted_ads/view/promoted_ads_screen.dart';
 import 'package:micro_service_e_commerce/presentation/search/view/search_screen.dart';
@@ -43,6 +44,7 @@ class Routes {
   static const String notificationRoute = "/notificationRoute";
   static const String abouteRoute = "/abouteRoute";
   static const String termsAndConditionsRoute = "/termsAndConditionsRoute";
+  static const String privacyPolicyRoute = "privacyPolicyRoute";
 }
 
 class RouteGenerator {
@@ -123,6 +125,10 @@ class RouteGenerator {
       case Routes.termsAndConditionsRoute:
         return MaterialPageRoute(
           builder: (_) => const TermsAndConditionsScreen(),
+        );
+      case Routes.privacyPolicyRoute:
+        return MaterialPageRoute(
+          builder: (_) => const PrivacyPolicyScreen(),
         );
       default:
         return unDefiendRoute();
