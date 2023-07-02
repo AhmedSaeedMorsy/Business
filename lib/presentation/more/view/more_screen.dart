@@ -204,7 +204,12 @@ class MoreScreen extends StatelessWidget {
               moreItem(
                 context: context,
                 image: AssetsManager.termsAndConditions,
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    Routes.termsAndConditionsRoute,
+                  );
+                },
                 label: AppStrings.termsOfUse.tr(),
               ),
               Container(

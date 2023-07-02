@@ -16,6 +16,7 @@ import 'package:micro_service_e_commerce/presentation/promoted_ads/view/promoted
 import 'package:micro_service_e_commerce/presentation/search/view/search_screen.dart';
 import 'package:micro_service_e_commerce/presentation/support_chat/view/chat_with_support_screen.dart';
 import 'package:micro_service_e_commerce/presentation/support_chat/view/support_chat_screen.dart';
+import 'package:micro_service_e_commerce/presentation/terms_and_conditions/view/terms_and_conditions_screen.dart';
 import '../../presentation/splash/view/splash_screen.dart';
 import '../../presentation/support_chat/view/messages_screen.dart';
 import 'strings_manager.dart';
@@ -41,6 +42,7 @@ class Routes {
   static const String messagesRoute = "/messagesRoute";
   static const String notificationRoute = "/notificationRoute";
   static const String abouteRoute = "/abouteRoute";
+  static const String termsAndConditionsRoute = "/termsAndConditionsRoute";
 }
 
 class RouteGenerator {
@@ -117,6 +119,10 @@ class RouteGenerator {
       case Routes.abouteRoute:
         return MaterialPageRoute(
           builder: (_) => const AboutScreen(),
+        );
+      case Routes.termsAndConditionsRoute:
+        return MaterialPageRoute(
+          builder: (_) => const TermsAndConditionsScreen(),
         );
       default:
         return unDefiendRoute();
