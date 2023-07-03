@@ -205,5 +205,18 @@
       "aboutBusinessContent3": "Nous espérons que vous aurez une expérience agréable et satisfaisante en utilisant Business",
       "productBy": "Un produit par",
       "visitBusiness": "Visiter Business.com",
-      "contactBusiness": "Contact Business","privacyPolicy":"Politique de confidentialité"
+      "contactBusiness": "Contact Business",
+      "privacyPolicy": "Politique de confidentialité",
+      "emailAddressOrPhonenumber": "E-mail ou numéro de téléphone",
+      "password": "Mot de passe",
+      "login": "Connexion",
+      "forgetPassword": "Mot de passe oublié?",
+      "createAnAccount": "Créer un compte",
+      "email": "E-mail",
+      "signUp": "Inscription",
+      "confirmPassword": "Confirmer le mot de passe",
+      "phoneNumber": "Numéro de téléphone",
+      "address": "Adresse",
+      "resetPassword": "Réinitialiser le mot de passe",
+      "confirm": "Confirmer"
 }

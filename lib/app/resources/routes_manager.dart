@@ -1,7 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:micro_service_e_commerce/presentation/Auth/view/login_screen.dart';
 import 'package:micro_service_e_commerce/presentation/about/view/about_screen.dart';
 import 'package:micro_service_e_commerce/presentation/add_ads/view/add_ads.dart';
+import 'package:micro_service_e_commerce/presentation/auth/view/forget_password_screen.dart';
+import 'package:micro_service_e_commerce/presentation/auth/view/register_screen.dart';
 import 'package:micro_service_e_commerce/presentation/blocked_user/view/blocked_user_screen.dart';
 import 'package:micro_service_e_commerce/presentation/chat/view/all_chat_screen.dart';
 import 'package:micro_service_e_commerce/presentation/country/country_screen.dart';
@@ -45,6 +48,9 @@ class Routes {
   static const String abouteRoute = "/abouteRoute";
   static const String termsAndConditionsRoute = "/termsAndConditionsRoute";
   static const String privacyPolicyRoute = "privacyPolicyRoute";
+  static const String loginRoute = "/loginRoute";
+  static const String registerRoute = "registerRoute";
+  static const String forgetPasswordRoute = "forgetPasswordRoute";
 }
 
 class RouteGenerator {
@@ -129,6 +135,18 @@ class RouteGenerator {
       case Routes.privacyPolicyRoute:
         return MaterialPageRoute(
           builder: (_) => const PrivacyPolicyScreen(),
+        );
+      case Routes.loginRoute:
+        return MaterialPageRoute(
+          builder: (_) => const LoginScreen(),
+        );
+      case Routes.registerRoute:
+        return MaterialPageRoute(
+          builder: (_) => const RegisterScreen(),
+        );
+      case Routes.forgetPasswordRoute:
+        return MaterialPageRoute(
+          builder: (_) => const ForgetPasswordScreen(),
         );
       default:
         return unDefiendRoute();

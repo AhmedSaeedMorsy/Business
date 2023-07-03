@@ -222,4 +222,16 @@ class AppStrings {
   static String visitBusiness = "visitBusiness";
   static String contactBusiness = "contactBusiness";
   static String privacyPolicy = "privacyPolicy";
+  static String emailAddressOrPhonenumber = "emailAddressOrPhonenumber";
+  static String password = "password";
+  static String login = "login";
+  static String forgetPassword = "forgetPassword";
+  static String createAnAccount = "createAnAccount";
+  static String email = "email";
+  static String signUp = "signUp";
+  static String confirmPassword = "confirmPassword";
+  static String phoneNumber = "phoneNumber";
+  static String address = "address";
+  static String resetPassword = "resetPassword";
+  static String confirm = "confirm";
 }

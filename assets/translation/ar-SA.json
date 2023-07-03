@@ -207,5 +207,17 @@
       "productBy": "منتج من",
       "visitBusiness": "Business.com زيارة",
       "contactBusiness": "تواصل مع بزنس",
-      "privacyPolicy": "سياسة الخصوصية"
+      "privacyPolicy": "سياسة الخصوصية",
+      "emailAddressOrPhonenumber": "الايميل هو رقم التلفون",
+      "password": "الرقم السري",
+      "login": "تسجيل الدخول",
+      "forgetPassword": "نسيت كلمة المرور؟",
+      "createAnAccount": "انشاء حساب",
+      "email": "الايميل",
+      "signUp": "انشاء حساب",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "phoneNumber": "رقم التلفون",
+      "address": "العنوان",
+      "resetPassword": "إعادة تعيين كلمة المرور",
+      "confirm": "تأكيد"
 }

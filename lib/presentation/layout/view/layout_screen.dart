@@ -132,11 +132,15 @@ class LayoutScreen extends StatelessWidget {
               showUnselectedLabels: false,
               currentIndex: LayoutBloc.get(context).index,
               onTap: (index) {
-                LayoutBloc.get(context).add(
-                  ChangeBottomNavBar(
-                    index,
-                  ),
-                );
+                if (index == 1 || index == 2) {
+                  Navigator.pushNamed(context, Routes.loginRoute);
+                } else {
+                  LayoutBloc.get(context).add(
+                    ChangeBottomNavBar(
+                      index,
+                    ),
+                  );
+                }
               },
             ),
             drawer: Drawer(

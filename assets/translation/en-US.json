@@ -209,5 +209,17 @@
       "productBy": "A product by",
       "visitBusiness": "Visit Business.com",
       "contactBusiness": "Contact Business",
-      "privacyPolicy": "Privacy policy"
+      "privacyPolicy": "Privacy policy",
+      "emailAddressOrPhonenumber": "Email or Phone number",
+      "password": "Password",
+      "login": "Login",
+      "forgetPassword": "Forget password?",
+      "createAnAccount": "Create an Account",
+      "email": "Email",
+      "signUp": "Sign Up",
+      "confirmPassword": "Confirm password",
+      "phoneNumber": "Phone number",
+      "address": "Address",
+      "resetPassword": "Reset password",
+      "confirm": "Confirm"
 }
