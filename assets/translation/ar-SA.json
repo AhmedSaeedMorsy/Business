@@ -208,7 +208,7 @@
       "visitBusiness": "Business.com زيارة",
       "contactBusiness": "تواصل مع بزنس",
       "privacyPolicy": "سياسة الخصوصية",
-      "emailAddressOrPhonenumber": "الايميل هو رقم التلفون",
+      "emailAddressOrPhonenumber": "الايميل او رقم التلفون",
       "password": "الرقم السري",
       "login": "تسجيل الدخول",
       "forgetPassword": "نسيت كلمة المرور؟",
@@ -219,5 +219,14 @@
       "phoneNumber": "رقم التلفون",
       "address": "العنوان",
       "resetPassword": "إعادة تعيين كلمة المرور",
-      "confirm": "تأكيد"
+      "confirm": "تأكيد",
+      "contact": "اتصال",
+      "reportAd": "إبلاغ عن",
+      "comments": "التعليقات",
+      "enterCommentHere": "اكتب نعليقك هنا",
+      "comment": "تعليق",
+      "relatedProducts": "منتجات ذات صلة",
+      "whatsApp": "واتساب",
+      "call": "اتصال",
+      "sms": "ارسال"
 }

@@ -15,6 +15,7 @@ import 'package:micro_service_e_commerce/presentation/notifications/view/notific
 import 'package:micro_service_e_commerce/presentation/onboarding/view/onBoarding_screen.dart';
 import 'package:micro_service_e_commerce/presentation/paid_packages/view/paid_package_screen.dart';
 import 'package:micro_service_e_commerce/presentation/privacy_policy/view/privacy_policy_screen.dart';
+import 'package:micro_service_e_commerce/presentation/product_details/view/product_details_screen.dart';
 import 'package:micro_service_e_commerce/presentation/promoted_ads/view/choose_category_promoted_screen.dart';
 import 'package:micro_service_e_commerce/presentation/promoted_ads/view/promoted_ads_screen.dart';
 import 'package:micro_service_e_commerce/presentation/search/view/search_screen.dart';
@@ -51,6 +52,7 @@ class Routes {
   static const String loginRoute = "/loginRoute";
   static const String registerRoute = "registerRoute";
   static const String forgetPasswordRoute = "forgetPasswordRoute";
+  static const String productDetailsRoute = "/productDetailsRoute";
 }
 
 class RouteGenerator {
@@ -147,6 +149,10 @@ class RouteGenerator {
       case Routes.forgetPasswordRoute:
         return MaterialPageRoute(
           builder: (_) => const ForgetPasswordScreen(),
+        );
+      case Routes.productDetailsRoute:
+        return MaterialPageRoute(
+          builder: (_) => const ProductDetailsScreen(),
         );
       default:
         return unDefiendRoute();

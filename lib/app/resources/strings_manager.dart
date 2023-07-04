@@ -234,4 +234,13 @@ class AppStrings {
   static String address = "address";
   static String resetPassword = "resetPassword";
   static String confirm = "confirm";
+  static String contact = "contact";
+  static String reportAd = "reportAd";
+  static String comments = "comments";
+  static String enterCommentHere = "enterCommentHere";
+  static String comment = "comment";
+  static String relatedProducts = "relatedProducts";
+  static String whatsApp = "whatsApp";
+  static String sms = "sms";
+  static String call = "call";
 }

@@ -218,5 +218,14 @@
       "phoneNumber": "Numéro de téléphone",
       "address": "Adresse",
       "resetPassword": "Réinitialiser le mot de passe",
-      "confirm": "Confirmer"
+      "confirm": "Confirmer",
+      "contact": "Contact",
+      "reportAd": "Signaler",
+      "comments": "Commentaires",
+      "enterCommentHere": "Entrez un commentaire ici",
+      "comment": "Commentaire",
+      "relatedProducts": "Produits connexes",
+      "whatsApp": "WhatsApp",
+      "call": "Appel",
+      "sms": "Sms"
 }
