@@ -86,7 +86,7 @@ class _MyAdsLayoutScreenState extends State<MyAdsLayoutScreen>
           indicatorSize: TabBarIndicatorSize.tab,
         ),
         SizedBox(
-          height: AppSize.s100.h,
+          height: AppSize.s250.h,
           child: TabBarView(
             physics: const NeverScrollableScrollPhysics(),
             controller: _tabController,

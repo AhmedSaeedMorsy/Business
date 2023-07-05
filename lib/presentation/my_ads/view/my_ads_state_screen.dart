@@ -13,7 +13,7 @@ class MyAdsStateScreen extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: MediaQuery.of(context).size.height / AppSize.s50,
+            height: MediaQuery.of(context).size.height / AppSize.s80,
           ),
           SharedWidget.defaultTextFormField(
             textInputType: TextInputType.text,

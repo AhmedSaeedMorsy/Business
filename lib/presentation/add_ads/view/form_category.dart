@@ -153,7 +153,8 @@ class FormCategoryScreen extends StatelessWidget {
         scrollbarThickness: AppSize.s8.w,
         offset: CacheHelper.getData(key: SharedKey.Language) ==
                     LanguageType.ENGLISH.getValue() ||
-                CacheHelper.getData(key: SharedKey.Language) == null
+                CacheHelper.getData(key: SharedKey.Language) == null||CacheHelper.getData(key: SharedKey.Language) ==
+                    LanguageType.FRANCE.getValue()
             ? Offset(AppSize.s20.w, 0)
             : Offset(-AppSize.s20.w, 0),
       ),

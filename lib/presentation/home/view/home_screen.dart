@@ -1371,7 +1371,7 @@ class HomeScreen extends StatelessWidget {
               image: AssetImage(
                 image ?? AssetsManager.camal,
               ),
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
             color: ColorManager.grey,
           ),
