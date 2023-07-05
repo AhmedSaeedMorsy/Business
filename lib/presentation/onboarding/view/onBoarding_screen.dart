@@ -40,9 +40,9 @@ class _OnBoardingScrenState extends State<OnBoardingScren> {
 
   void toLoginScreen() {
     // CacheHelper.setData(key: 'onBoarding', value: true);
-    Navigator.pushReplacementNamed(
+    Navigator.pushNamed(
       context,
-      Routes.layoutRoute,
+      Routes.advertisementRoute,
     );
   }
 
@@ -106,7 +106,7 @@ class _OnBoardingScrenState extends State<OnBoardingScren> {
                   function: () {
                     Navigator.pushReplacementNamed(
                       context,
-                      Routes.layoutRoute,
+                      Routes.advertisementRoute,
                     );
                   },
                   text: AppStrings.start.tr(),

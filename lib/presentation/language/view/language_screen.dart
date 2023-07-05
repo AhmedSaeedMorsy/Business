@@ -20,15 +20,17 @@ class LanguageScreen extends StatelessWidget {
   const LanguageScreen({
     super.key,
     required this.isEgypt,
+    required this.isFirst,
   });
   final bool isEgypt;
+  final bool isFirst;
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => LanguageBloc(),
       child: BlocBuilder<LanguageBloc, LanguageStates>(
         builder: (context, state) {
-          LanguageEnum language = state.language;
+          LanguageEnum language =getLanguage();
           return Scaffold(
             backgroundColor: ColorManager.white,
             body: Padding(
@@ -85,34 +87,36 @@ class LanguageScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                 !isEgypt? Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          AppStrings.france,
-                          style: Theme.of(context).textTheme.displayLarge,
-                        ),
-                      ),
-                      Radio(
-                        activeColor: ColorManager.primaryColorBlue,
-                        value: LanguageEnum.france,
-                        groupValue: language,
-                        onChanged: (value) {
-                          language = value!;
-                          if (language == LanguageEnum.france) {
-                            CacheHelper.setData(
-                                key: SharedKey.Language,
-                                value: LanguageType.FRANCE.getValue());
-                          }
-                          LanguageBloc.get(context).add(
-                            ChooseLanguageEvent(
-                              language,
+                  !isEgypt
+                      ? Row(
+                          children: [
+                            Expanded(
+                              child: Text(
+                                AppStrings.france,
+                                style: Theme.of(context).textTheme.displayLarge,
+                              ),
                             ),
-                          );
-                        },
-                      ),
-                    ],
-                  ):const SizedBox(),
+                            Radio(
+                              activeColor: ColorManager.primaryColorBlue,
+                              value: LanguageEnum.france,
+                              groupValue: language,
+                              onChanged: (value) {
+                                language = value!;
+                                if (language == LanguageEnum.france) {
+                                  CacheHelper.setData(
+                                      key: SharedKey.Language,
+                                      value: LanguageType.FRANCE.getValue());
+                                }
+                                LanguageBloc.get(context).add(
+                                  ChooseLanguageEvent(
+                                    language,
+                                  ),
+                                );
+                              },
+                            ),
+                          ],
+                        )
+                      : const SizedBox(),
                   isEgypt
                       ? Row(
                           children: [
@@ -146,10 +150,12 @@ class LanguageScreen extends StatelessWidget {
                     function: () {
                       getLocal().then((local) => {context.setLocale(local)});
 
-                      Navigator.pushNamed(
-                        context,
-                        Routes.onBoardingRoute,
-                      );
+                      isFirst
+                          ? Navigator.pushNamed(
+                              context,
+                              Routes.onBoardingRoute,
+                            )
+                          : Navigator.pop(context);
                     },
                     text: AppStrings.next.tr(),
                     backgroundColor: ColorManager.primaryColorBlue,
@@ -164,5 +170,14 @@ class LanguageScreen extends StatelessWidget {
         },
       ),
     );
+  }
+  LanguageEnum getLanguage(){
+    if(CacheHelper.getData(key: SharedKey.Language)==LanguageType.FRANCE.getValue()){
+      return LanguageEnum.france;
+    }else if (CacheHelper.getData(key: SharedKey.Language)==LanguageType.ARABIC.getValue()){
+      return LanguageEnum.arabic;
+    }else{
+      return LanguageEnum.english;
+    }
   }
 }

@@ -6,10 +6,12 @@ import 'package:micro_service_e_commerce/app/resources/assets_manager.dart';
 import 'package:micro_service_e_commerce/app/resources/color_manager.dart';
 import 'package:micro_service_e_commerce/app/resources/strings_manager.dart';
 import 'package:micro_service_e_commerce/app/resources/values_manager.dart';
+import 'package:micro_service_e_commerce/app/services/shared_prefrences/cache_helper.dart';
 import 'package:micro_service_e_commerce/presentation/layout/controller/bloc.dart';
 import 'package:micro_service_e_commerce/presentation/layout/controller/states.dart';
 
 import '../../../app/resources/routes_manager.dart';
+import '../../language/view/language_screen.dart';
 import '../../layout/controller/event.dart';
 
 class MoreScreen extends StatelessWidget {
@@ -166,7 +168,20 @@ class MoreScreen extends StatelessWidget {
               moreItem(
                 context: context,
                 image: AssetsManager.worldwide,
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => LanguageScreen(
+                        isEgypt: CacheHelper.getData(key: SharedKey.country) ==
+                                "egypt"
+                            ? true
+                            : false,
+                        isFirst: false,
+                      ),
+                    ),
+                  );
+                },
                 label: AppStrings.language.tr(),
               ),
               Container(

@@ -42,6 +42,7 @@ class CountryScreen extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => const LanguageScreen(
                         isEgypt: true,
+                        isFirst: true,
                       ),
                     ),
                   );
@@ -73,6 +74,7 @@ class CountryScreen extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (context) => const LanguageScreen(
                         isEgypt: false,
+                        isFirst: true,
                       ),
                     ),
                   );

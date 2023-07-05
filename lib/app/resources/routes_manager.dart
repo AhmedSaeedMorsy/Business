@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:micro_service_e_commerce/presentation/Auth/view/login_screen.dart';
 import 'package:micro_service_e_commerce/presentation/about/view/about_screen.dart';
 import 'package:micro_service_e_commerce/presentation/add_ads/view/add_ads.dart';
+import 'package:micro_service_e_commerce/presentation/advertisement/view/Advertisement_screen.dart';
 import 'package:micro_service_e_commerce/presentation/auth/view/forget_password_screen.dart';
 import 'package:micro_service_e_commerce/presentation/auth/view/register_screen.dart';
 import 'package:micro_service_e_commerce/presentation/blocked_user/view/blocked_user_screen.dart';
@@ -53,6 +54,7 @@ class Routes {
   static const String registerRoute = "registerRoute";
   static const String forgetPasswordRoute = "forgetPasswordRoute";
   static const String productDetailsRoute = "/productDetailsRoute";
+  static const String advertisementRoute = "/advertisementRoute";
 }
 
 class RouteGenerator {
@@ -153,6 +155,10 @@ class RouteGenerator {
       case Routes.productDetailsRoute:
         return MaterialPageRoute(
           builder: (_) => const ProductDetailsScreen(),
+        );
+      case Routes.advertisementRoute:
+        return MaterialPageRoute(
+          builder: (_) => const AdvertisementScreen(),
         );
       default:
         return unDefiendRoute();

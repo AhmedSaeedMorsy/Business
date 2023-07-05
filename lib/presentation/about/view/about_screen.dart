@@ -36,7 +36,7 @@ class AboutScreen extends StatelessWidget {
                       child: Container(
                         clipBehavior: Clip.antiAliasWithSaveLayer,
                         width: AppSize.s120.w,
-                        height: AppSize.s120.h,
+                        height: AppSize.s120.w,
                         decoration: BoxDecoration(
                           image: const DecorationImage(
                             fit: BoxFit.cover,
