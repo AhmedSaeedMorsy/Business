@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:micro_service_e_commerce/app/resources/language_manager.dart';
 import 'package:micro_service_e_commerce/app/resources/routes_manager.dart';
-import 'package:micro_service_e_commerce/app/resources/strings_manager.dart';
 import 'package:micro_service_e_commerce/app/resources/theme_manager.dart';
 
 class MyApp extends StatefulWidget {
