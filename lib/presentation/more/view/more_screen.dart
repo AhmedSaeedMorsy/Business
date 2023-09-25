@@ -2,17 +2,16 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:micro_service_e_commerce/app/resources/assets_manager.dart';
-import 'package:micro_service_e_commerce/app/resources/color_manager.dart';
-import 'package:micro_service_e_commerce/app/resources/strings_manager.dart';
-import 'package:micro_service_e_commerce/app/resources/values_manager.dart';
-import 'package:micro_service_e_commerce/app/services/shared_prefrences/cache_helper.dart';
-import 'package:micro_service_e_commerce/presentation/layout/controller/bloc.dart';
-import 'package:micro_service_e_commerce/presentation/layout/controller/states.dart';
-
+import '../../../app/resources/assets_manager.dart';
+import '../../../app/resources/color_manager.dart';
 import '../../../app/resources/routes_manager.dart';
+import '../../../app/resources/strings_manager.dart';
+import '../../../app/resources/values_manager.dart';
+import '../../../app/services/shared_prefrences/cache_helper.dart';
 import '../../language/view/language_screen.dart';
+import '../../layout/controller/bloc.dart';
 import '../../layout/controller/event.dart';
+import '../../layout/controller/states.dart';
 
 class MoreScreen extends StatelessWidget {
   const MoreScreen({super.key});

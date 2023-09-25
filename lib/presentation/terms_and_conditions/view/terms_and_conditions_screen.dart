@@ -1,11 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:micro_service_e_commerce/app/resources/color_manager.dart';
-import 'package:micro_service_e_commerce/app/resources/font_manager.dart';
-import 'package:micro_service_e_commerce/app/resources/values_manager.dart';
 
+import '../../../app/resources/color_manager.dart';
+import '../../../app/resources/font_manager.dart';
 import '../../../app/resources/strings_manager.dart';
+import '../../../app/resources/values_manager.dart';
 
 class TermsAndConditionsScreen extends StatelessWidget {
   const TermsAndConditionsScreen({super.key});

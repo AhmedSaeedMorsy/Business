@@ -1,9 +1,9 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:micro_service_e_commerce/app/resources/strings_manager.dart';
-import 'package:micro_service_e_commerce/presentation/home/view/home_screen.dart';
+import '../../../app/resources/strings_manager.dart';
 import '../../favorites/view/favorites_screen.dart';
+import '../../home/view/home_screen.dart';
 import '../../more/view/more_screen.dart';
 import '../../my_ads/view/my_ads_screen.dart';
 import 'event.dart';
